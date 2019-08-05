@@ -1,0 +1,9 @@
+version: "3"
+services:
+  odoo-service:
+    container_name: odoo-service
+    image: odoo:latest
+    external_links:
+      - odoo-db:db
+    ports:
+      - 8069:8069

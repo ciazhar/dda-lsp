@@ -1,0 +1,9 @@
+version: "3"
+services:
+  odoo-db:
+    container_name: odoo-db
+    image: postgres:10
+    environment:
+      - "POSTGRES_USER=odoo"
+      - "POSTGRES_PASSWORD=odoo"
+      - "POSTGRES_DB=postgres"
