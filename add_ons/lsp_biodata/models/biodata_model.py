@@ -15,13 +15,13 @@ class Biodata(models.Model):
   # teams_ids = fields.Many2many('res.biodata', string='Tim Bio')
 
   _sql_constraints = [
-    ('name_unique',
+    ('nim_unique',
       'UNIQUE(nim)',
       "The NIM must be unique"),
-    ('name_unique',
+    ('nik_unique',
       'UNIQUE(nik)',
       "The NIK must be unique"),
-    ('name_unique',
+    ('email_unique',
       'UNIQUE(email)',
       "The EMAIL must be unique"),
   ]
