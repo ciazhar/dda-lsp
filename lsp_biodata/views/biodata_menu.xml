@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <act_window id="action_biodata_s"
+      name="Biodata Creator"
+      res_model="biodata.s"
+      view_mode="tree,form" />
+
+    <menuitem id="menu_biodata_s"
+      name="Biodatas"
+      action="action_biodata_s" />
+  </data>
+</odoo>
