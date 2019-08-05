@@ -15,7 +15,7 @@ services:
       - "POSTGRES_DB=postgres"
     networks:
       - dda
-      
+
   odoo-service:
     container_name: odoo-service
     image: odoo:latest
@@ -25,3 +25,5 @@ services:
       - 8069:8069
     networks:
       - dda
+    volumes:
+      - ./add_ons:/mnt/extra-addons
