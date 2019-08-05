@@ -9,6 +9,7 @@ class Biodata(models.Model):
   nik = fields.Char(string='Nik', required=True)
   name = fields.Char(string='Name', required=True)
   alamat = fields.Char(string='Alamat', required=True)
+  email = fields.Char(string='Email', required=True)
   # is_done = fields.Boolean('Done?')
   # active = fields.Boolean(string='Active?', default=True)
   user_id = fields.Many2one('res.users', string='Responsible', default=lambda self: self.env.user)
