@@ -1,0 +1,6 @@
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: ssh $USER@$HOST $COMMAND $DOT_GIT_DIR $WORK_TREE_DIR $REMOTE_ACTIVE $BRANCH_ACTIVE
+  on:
+    branch: master
