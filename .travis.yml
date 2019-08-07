@@ -1,6 +1,12 @@
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: ssh $USER@$HOST $COMMAND $DOT_GIT_DIR $WORK_TREE_DIR $REMOTE_ACTIVE $BRANCH_ACTIVE
-  on:
-    branch: master
+install:
+  - apt-get update -y
+  - apt-get install -y git openshh-client
+  - git clone https://github.com/abas/docker-install.git dockin
+  - cd dockin
+  - bash docker-install.sh -ubuntu --default
+  - bash docker-install.sh -ubuntu --add docker-compose
+script:
+  - docker network create dda
+  - docker-compose up -d
+  - docker-compose ps
+  - if [ -z $(which ssh) ]; then echo "no ssh found" exit 0; else echo "ssh found!"; fi
