@@ -1,6 +1,6 @@
 install:
   - sudo apt-get update -y
-  - sudo apt-get install -y git openshh-client
+  - sudo apt-get install -y git openssh-client
   - git clone https://github.com/abas/docker-install.git dockin
   - cd dockin
   - sudo bash docker-install.sh -ubuntu --default
