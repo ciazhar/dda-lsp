@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<t name="Contact Us" t-name="website.contactus">
+  <t t-call="website.layout">
+    <div id="wrap">
+      <div class="oe_structure">
+        <section class="pt8 pb8">
+          <div class="container">
+            <div class="row s_nb_column_fixed">
+              <div class="col-lg-12 s_title pt16 pb16">
+                <h1>Form Biodata</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="oe_structure">
+              <section class="s_text_block">
+                <div class="container">
+                  <form>
+                    <div class="form-group">
+                      <label for="Nim">Nim</label>
+                      <input class="form-control" type="text" name="Nim" id="Nim" placeholder="Nim"
+                        aria-describedby="NimHelp" />
+                      <small id="NimHelp" class="form-text text-muted">ex : X11.201X.09XXXX</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="Nik">Nik</label>
+                      <input class="form-control" type="text" name="Nik" id="Nik" placeholder="Nik"
+                        aria-describedby="NikHelp" />
+                    </div>
+                    <div class="form-group">
+                      <label for="Nama">Nama</label>
+                      <input class="form-control" type="text" name="Nama" id="Nama" placeholder="Nama"
+                        aria-describedby="NamaHelp" />
+                    </div>
+                    <div class="form-group">
+                      <label for="TempatLahir">Tempat Lahir</label>
+                      <input class="form-control" type="text" name="TempatLahir" id="TempatLahir"
+                        placeholder="Tempat Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="TanggalLahir">Tanggal Lahir</label>
+                      <input class="form-control" type="text" name="TanggalLahir" id="TanggalLahir"
+                        placeholder="Tanggal Lahir" />
+                    </div>
+                    <div class="form-group">
+                      <label for="JenisKelamin">Jenis elamin</label>
+                      <select class="form-control" name="JenisKelamin" id="JenisKelamin">
+                        <option>...</option>
+                        <option value="l">Laki-Laki</option>
+                        <option value="p">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="AlamatTitle">
+                        <h4>Alamat Sekarang</h4>
+                      </label>
+                    
+                      <div class="form-group">
+                        <label for="TempatTinggal">Tempat Tinggal</label>
+                        <input class="form-control" type="text" name="TempatTinggal" id="TempatTinggal"
+                          placeholder="Tempat Tinggal" />
+                      </div>
+                      <div class="form-group">
+                        <label for="KabupatenKota">Kabupaten / Kota</label>
+                        <input class="form-control" type="text" name="KabupatenKota" id="KabupatenKota"
+                          placeholder="Kabupaten / Kota" />
+                      </div>
+                      <div class="form-group">
+                        <label for="Provinsi">Provinsi</label>
+                        <input class="form-control" type="text" name="Provinsi" id="Provinsi"
+                          placeholder="Provinsi" />
+                      </div>
+                      <div class="form-group">
+                        <label for="NomorHp">Nomor HP</label>
+                        <input class="form-control" type="text" name="NomorHp" id="NomorHp"
+                          placeholder="Nomor HP" />
+                      </div>
+                      <div class="form-group">
+                        <label for="Email">Alamat Email</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                          placeholder="Enter email" />
+                        <small id="emailHelp" class="form-text text-muted test_class">ex : odoo@mail.com</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="PendidikanTerakhir">Pendidikan Terakhir</label>
+                        <input class="form-control" type="text" name="PendidikanTerakhir" id="PendidikanTerakhir"
+                          placeholder="Pendidikan Terakhir" />
+                      </div>
+                      <div class="form-group">
+                        <label for="Pekerjaan">Pekerjaan</label>
+                        <input class="form-control" type="text" name="Pekerjaan" id="Pekerjaan"
+                          placeholder="Pekerjaan" />
+                      </div>
+                      <div class="form-group">
+                        <label for="SkemaSertifikasi">Skema Sertifikasi</label>
+                        <select class="form-control" name="SkemaSertifikasi" id="SkemaSertifikasi">
+                          <option>...</option>
+                          <option value="1">Skema 1</option>
+                          <option value="2">Skema 2</option>
+                          <option value="3">Skema 3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4">
+            <t t-call="website.company_description" />
+          </div> -->
+        </div>
+      </div>
+      <!-- <div class="oe_structure mt-2" /> -->
+      <br/><br/><br/>
+    </div>
+  </t>
+</t>
