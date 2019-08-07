@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <act_window id="action_lsp_jadwal"
+                    name="Jadwal Sertifikasi Asesi"
+                    res_model="lsp.dokumen"
+                    view_mode="tree,form" />
+
+        <menuitem id="menu_lsp_dokumen"
+                  name="Jadwal Sertifikasi"
+                  action="action_lsp_jadwal" />
+    </data>
+</odoo>
