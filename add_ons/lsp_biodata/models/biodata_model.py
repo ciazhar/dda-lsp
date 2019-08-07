@@ -2,18 +2,22 @@
 from odoo import fields, models
 
 class Biodata(models.Model):
+  _inherit = 'res.partner'
   _name = 'biodata.s'
   _description = 'Biodata Description'
 
-  nim = fields.Char(string='Nim', required=True)
-  nik = fields.Char(string='Nik', required=True)
   name = fields.Char(string='Name', required=True)
-  alamat = fields.Char(string='Alamat', required=True)
+  nik = fields.Char(string='Nik', required=True)
+  tempat_lahir = fields.Char(string='Tempat Lahir')
+  tanggal_lahir = fields.Char(string='Tanggal Lahir')
+  jenis_kelamin = fields.Selection([('male', 'Male'),('female', 'Female')])
+  alamat = fields.Char(string='Alamat')
+  phone = fields.Char(string='Phone Number')
   email = fields.Char(string='Email', required=True)
-  # is_done = fields.Boolean('Done?')
-  # active = fields.Boolean(string='Active?', default=True)
+  pendidikan_terakhir = fields.Char(string='Pendidikan Terakhir')
+  skema_sertifikasi = fields.Char(string='Skema Sertifikasi')
   user_id = fields.Many2one('res.users', string='Responsible', default=lambda self: self.env.user)
-  # teams_ids = fields.Many2many('res.biodata', string='Tim Bio')
+  accessor = fields.Boolean("isAccessor", default=False)
 
   _sql_constraints = [
     ('nim_unique',
