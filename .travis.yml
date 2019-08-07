@@ -1,12 +1,12 @@
 install:
-  - apt-get update -y
-  - apt-get install -y git openshh-client
+  - sudo apt-get update -y
+  - sudo apt-get install -y git openshh-client
   - git clone https://github.com/abas/docker-install.git dockin
   - cd dockin
-  - bash docker-install.sh -ubuntu --default
-  - bash docker-install.sh -ubuntu --add docker-compose
+  - sudo bash docker-install.sh -ubuntu --default
+  - sudo bash docker-install.sh -ubuntu --add docker-compose
 script:
-  - docker network create dda
-  - docker-compose up -d
-  - docker-compose ps
+  - sudo docker network create dda
+  - sudo docker-compose up -d
+  - sudo docker-compose ps
   - if [ -z $(which ssh) ]; then echo "no ssh found" exit 0; else echo "ssh found!"; fi
