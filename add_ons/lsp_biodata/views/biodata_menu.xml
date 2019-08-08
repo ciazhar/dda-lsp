@@ -7,7 +7,7 @@
       view_mode="tree,form" />
 
     <menuitem id="menu_biodata_s"
-      name="Biodatas"
+      name="Biodata"
       action="action_biodata_s" />
   </data>
 </odoo>
