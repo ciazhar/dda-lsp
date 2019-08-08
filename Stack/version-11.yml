@@ -6,9 +6,9 @@ networks:
       name: dda
 
 services:
-  odoo-db:
-    container_name: odoo-db
-    image: postgres:10
+  odoodb-11:
+    container_name: odoodb-11
+    image: postgres:11
     environment:
       - "POSTGRES_USER=odoo"
       - "POSTGRES_PASSWORD=odoo"
@@ -16,13 +16,13 @@ services:
     networks:
       - dda
 
-  odoo-service:
-    container_name: odoo-service
-    image: odoo:latest
+  odoo-11:
+    container_name: odoo-11
+    image: odoo:11
     external_links:
-      - odoo-db:db
+      - odoodb-11:db
     ports:
-      - 8069:8069
+      - 8068:8069
     networks:
       - dda
     volumes:
