@@ -3,14 +3,10 @@
     <data>
         <act_window id="action_lsp_berkas"
                     name="Berkas Sertifikasi Asesi"
-                    res_model="lsp.dokumen"
+                    res_model="lsp.berkas"
                     view_mode="tree,form" />
 
-        <field name="upload_file" filename="file_name"/>
-        <field name="file_name" invisible="1"/>
-
-
-        <menuitem id="menu_lsp_dokumen"
+        <menuitem id="menu_lsp_berkas"
                   name="Berkas Sertifikasi"
                   action="action_lsp_berkas" />
     </data>

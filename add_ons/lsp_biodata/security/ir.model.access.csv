@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_biodata_s_group_user,biodata.s.user,model_biodata_s,base.group_user,1,1,1,1
+access_berkas_s_group_user,lsp.berkas.name,model_lsp_berkas,base.group_user,1,1,1,1
+access_jadwal_s_group_user,lsp.jadwal.name,model_lsp_jadwal,base.group_user,1,1,1,1

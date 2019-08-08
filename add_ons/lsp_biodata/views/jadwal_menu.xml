@@ -3,10 +3,11 @@
     <data>
         <act_window id="action_lsp_jadwal"
                     name="Jadwal Sertifikasi Asesi"
-                    res_model="lsp.dokumen"
+                    res_model="lsp.jadwal"
                     view_mode="tree,form" />
 
-        <menuitem id="menu_lsp_dokumen"
+
+        <menuitem id="menu_lsp_jadwal"
                   name="Jadwal Sertifikasi"
                   action="action_lsp_jadwal" />
     </data>
