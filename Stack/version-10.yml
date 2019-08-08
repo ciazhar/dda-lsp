@@ -1,0 +1,29 @@
+version: "3"
+
+networks:
+  dda:
+    external:
+      name: dda
+
+services:
+  odoodb-10:
+    container_name: odoodb-10
+    image: postgres:10
+    environment:
+      - "POSTGRES_USER=odoo"
+      - "POSTGRES_PASSWORD=odoo"
+      - "POSTGRES_DB=postgres"
+    networks:
+      - dda
+
+  odoo-10:
+    container_name: odoo-10
+    image: odoo:latest
+    external_links:
+      - odoodb-10:db
+    ports:
+      - 8067:8069
+    networks:
+      - dda
+    volumes:
+      - ./add_ons:/mnt/extra-addons
