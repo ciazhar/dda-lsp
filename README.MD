@@ -29,6 +29,6 @@ jika proses terasa lama, coba check logs pada container dengan perintah
   $ docker-compose -f Stack/{version} logs # logs service
 
   # ex:
-  $ docekr-compose -f Stack/version-10.yml up -d 
+  $ docker-compose -f Stack/version-10.yml up -d 
   # will run odoo service version 10
 ```
