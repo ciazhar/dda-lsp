@@ -2,7 +2,7 @@
 from odoo import fields, models
 
 class Biodata(models.Model):
-  _inherit = 'res.partner'
+  # _inherit = 'res.user'
   _name = 'biodata.s'
   _description = 'Biodata Description'
 
