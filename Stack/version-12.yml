@@ -26,4 +26,4 @@ services:
     networks:
       - dda
     volumes:
-      - ./add_ons:/mnt/extra-addons
+      - ../add_ons:/mnt/extra-addons
